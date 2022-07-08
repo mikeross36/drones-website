@@ -1,0 +1,60 @@
+@use "../mixins";
+@use "../variables" as *;
+
+.newsletter {
+
+    &__bg {
+        display: grid;
+        row-gap: 2rem;
+        padding: 2rem 7%;
+        text-align: center;
+        justify-content: center;
+        background-color: $firstClr;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+        @include mixins.breakpoint-up(large){
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            align-content: end;  
+            column-gap: 3rem;
+            padding: 3rem 7%;
+            text-align: initial;
+        }
+
+        .newsletter__title {
+            margin-bottom: $mb-1-5;
+        }
+
+        .newsletter__subscribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 1rem;
+
+            & div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 1rem;
+            }
+
+            @include mixins.breakpoint-up(large) {
+                row-gap: 1.5rem;
+                & div {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        .newsletter__input {
+            border: none;
+            outline: none;
+            background-color: $titleClr;
+            padding: 1.25rem 4rem;
+            color: $containerClr;
+        }
+    }
+}

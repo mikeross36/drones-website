@@ -1,0 +1,78 @@
+@use "../mixins";
+@use "../variables" as *;
+
+.story {
+
+    &__container{
+        display: grid;
+        row-gap: 7.5rem;
+        align-items: center;
+        justify-content: center;
+        
+        @include mixins.breakpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+
+        @include mixins.breakpoint-up(large) {
+            column-gap: 8rem;
+        }
+
+        @include mixins.breakpoint-up(xlarge) {
+            column-gap: 10rem;
+            padding-top: 3rem;
+        }
+
+        .story__data {
+
+            @include mixins.breakpoint-up(medium) {
+
+                .story__section-title{
+                    text-align: initial;
+        
+                    &::before{
+                        margin: initial;
+                    }
+                }
+            }
+
+            .story__title{
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                color: $textClr;
+            }
+
+            .story__description{
+                margin-bottom: 2.5rem;
+                color: $textClr;
+            }
+        }
+    }
+  
+    .story__images{
+        position: relative;
+
+        .story__square{
+            width: 350px;
+            height: 350px;
+            background-color: $firstClr;
+    
+            @include mixins.breakpoint-up(xlarge){
+                height: 470px;
+                width: 450px;
+            }
+        }
+        
+        .story__img{
+            width: 350px;
+            position: absolute;
+            left: 3rem;
+            top: -3rem;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+            @include mixins.breakpoint-up(xlarge){
+                width: 430px;
+            }
+        }
+    }
+}

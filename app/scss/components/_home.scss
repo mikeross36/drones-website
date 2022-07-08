@@ -1,0 +1,128 @@
+@use "../mixins";
+@use "../variables" as *;
+
+.home {
+    &__container {
+        display: grid;
+        row-gap: 2.5rem;
+        position: relative;
+
+        @include mixins.breakpoint-up(medium){
+            padding-top: 6rem;
+            grid-template-columns: 1fr max-content;
+            align-items: center;
+        }
+
+        @include mixins.breakpoint-up(large){
+            column-gap: 1rem;
+        }
+    }
+
+    .home__img-bcg {
+        background-color: $firstClr;
+        width: 258px;
+        height: 430px;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        justify-self: flex-end;
+        transform: translateX(1.5rem);
+
+        @include mixins.breakpoint-down(small) {
+            width: 250px;
+        }
+
+        @include mixins.breakpoint-up(medium) {
+            order: 1;
+            transform: translate(1.5rem, -6rem);
+            width: 270px;
+        }
+
+        @include mixins.breakpoint-up(large) {
+            width: 450px;
+            height: 630px;
+        }
+
+        .home__img {
+            width: 240px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+            @include mixins.breakpoint-up(small){
+                width: 240px;;
+            }
+
+            @include mixins.breakpoint-up(large) {
+                width: 380px;
+            }
+        }
+    }
+
+    .home__social {
+        position: absolute;
+        top: 35%;
+        left: -5rem;
+        transform: rotate(-90deg);
+        display: flex;
+        column-gap: 1rem;
+
+        @include mixins.breakpoint-up(medium) {
+            top: 47%;
+        }
+
+        @include mixins.breakpoint-up(large) {
+            column-gap: 2.5rem;
+            left: -6.5rem;
+            top: 40%;
+        }
+
+        &-link {
+            font-size: $fontSm;
+            color: $firstClr;
+            font-weight: $weightMd;
+            transition: .3s;
+
+            &:hover {
+                color: $textClrLight;
+            }
+        }
+    }
+
+    .home__data {
+        display: flex;
+        flex-direction: column;
+
+        @include mixins.breakpoint-up(medium) {
+            padding: 0 0 3rem 5rem;
+        }
+
+        @include mixins.breakpoint-up(large) {
+            row-gap: 1.5rem;
+            padding: 0 0 8rem 4rem;
+        }
+    }
+
+    .home__title {
+        font-weight: $weightLg;
+        margin-bottom: $mb-1;
+        color: $textClr;
+
+        @include mixins.breakpoint-up(xlarge) {
+            line-height: 1.4;
+        }
+    }
+
+    .home__description {
+        margin-bottom: $mb-1-5;
+        color: $textClr;
+    }
+
+    .home__btns {
+        display: flex;
+        align-items: center;
+    }
+
+    .home__button {
+        box-shadow: 0 12px 24px #1a1a1a33;
+    }
+}

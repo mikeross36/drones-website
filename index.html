@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Drones Website</title>
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <script src="/dist/js/all.js" defer></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="/app/images/drone-logo.svg" alt="" width="50px" height="50px">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">News</a>
+                    </li>
+                </ul>
+                <button class="nav__close" id="nav-close">
+                    <img src="/app/images/close-btn.svg" alt=""  width="40px" height="40px">
+                </button>
+            </div>
+            <menu class="nav__btns">
+                <button class="nav__shop" id="cart-shop">
+                    <img src="/app/images/shopping-cart2.svg" alt="" width="40px" height="40px">
+                </button>
+                <button class="nav__toggle" id="nav-toggle">
+                    <img src="/app/images/menu-btn.svg" alt="" width="30px" height="30px">
+                </button>
+            </menu>
+        </nav>
+    </header>
+
+    <!-- CART -->
+
+    <aside class="cart" id="cart">
+        <img src="/app/images/close-cart.svg" alt="" class="cart__close" id="cart-close" width="30px" height="30px">
+        <h2 class="cart__title-center">My Cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="/app/images/drone6.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h4 class="cart__title">Some Drone</h4>
+                    <span class="cart__price">1050 €</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <img src="/app/images/chevron-down.svg" alt="" width="20px" height="20px">
+                            </span>
+                            <span class="cart_amount-number">0</span>
+                            <span class="cart__amount-box">
+                                <img src="/app/images/chevron-up.svg" alt="" width="20px" height="20px">
+                            </span>
+                        </div>
+                        <img src="/app/images/can-trash.svg" alt="" class="cart__amount-trash" width="20px" height="20px">
+                    </div>
+                </div>
+            </article>
+            <!--  -->
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="/app/images/drone8.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h4 class="cart__title">Some Drone</h4>
+                    <span class="cart__price">1050 €</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <img src="/app/images/chevron-down.svg" alt="" width="20px" height="20px">
+                            </span>
+                            <span class="cart_amount-number">0</span>
+                            <span class="cart__amount-box">
+                                <img src="/app/images/chevron-up.svg" alt="" width="20px" height="20px">
+                            </span>
+                        </div>
+                        <img src="/app/images/can-trash.svg" alt="" class="cart__amount-trash" width="20px" height="20px">
+                    </div>
+                </div>
+            </article>
+            <!--  -->
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="/app/images/drone9.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h4 class="cart__title">Some Drone</h4>
+                    <span class="cart__price">1050 €</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <img src="/app/images/chevron-down.svg" alt="" width="20px" height="20px">
+                            </span>
+                            <span class="cart_amount-number">0</span>
+                            <span class="cart__amount-box">
+                                <img src="/app/images/chevron-up.svg" alt="" width="20px" height="20px">
+                            </span>
+                        </div>
+                        <img src="/app/images/can-trash.svg" alt="" class="cart__amount-trash" width="20px" height="20px">
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">2880 €</span>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container container">
+                <div class="home__img-bcg">
+                    <img src="/app/images/home-bcg5.jpg" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" class="home__social-link">Facebook</a>
+                    <a href="https://twitter.com/" class="home__social-link">Twitter</a>
+                    <a href="https://www.instagram.com/" class="home__social-link">Instagram</a>
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">The Best Drones <br> for 2022</h1>
+                    <p class="home__description">
+                        A high-quality quadcopter is a serious investment, and an easy way to add production value to a film project or get a unique view for your travel vlog.
+                    </p>
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">Discover</a>
+                        <button class="button home__button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED -->
+
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">Featured</h2>
+            <div class="featured__container">
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="/app/images/featured3.png" alt="" class="featured__img">
+                    <div class="featured__data">
+                        <h3 class="featured__title">Some Dron</h3>
+                        <span class="featured__price">1050 €</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="/app/images/featured4.png" alt="" class="featured__img">
+                    <div class="featured__data">
+                        <h3 class="featured__title">Some Dron</h3>
+                        <span class="featured__price">1050 €</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+                    <img src="/app/images/featured5.png" alt="" class="featured__img">
+                    <div class="featured__data">
+                        <h3 class="featured__title">Some Dron</h3>
+                        <span class="featured__price">1050 €</span>
+                    </div>
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- STORY -->
+
+        <section class="story section container">
+            <div class="story__container">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        Our Story
+                    </h2>
+                    <h1 class="story__title">
+                        You Can Trust Our Reviews
+                    </h1>
+                    <p class="story__description">
+                        We've flown plenty, and these are the best drones in our tests.
+                        Since 1982, we have tested and rated thousands of products to help you make better buying decisions.
+                    </p>
+                    <a href="#" class="button button--small">Discover</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="/app/images/home-bcg2.jpg" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Products
+            </h2>
+            <div class="products__container">
+                <article class="products__card">
+                    <img src="/app/images/featured6.jpg" alt="" class="products__img">
+                    <h3 class="products__title">Some Drone</h3>
+                    <span class="products__price">1500 €</span>
+                    <button class="products__button">
+                        <img src="/app/images/shopping-cart.svg" alt="" width="30px" height="30px">
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="/app/images/featured5.png" alt="" class="products__img">
+                    <h3 class="products__title">Some Drone</h3>
+                    <span class="products__price">1500 €</span>
+                    <button class="products__button">
+                        <img src="/app/images/shopping-cart.svg" alt="" width="30px" height="30px">
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="/app/images/featured4.png" alt="" class="products__img">
+                    <h3 class="products__title">Some Drone</h3>
+                    <span class="products__price">1500 €</span>
+                    <button class="products__button">
+                        <img src="/app/images/shopping-cart.svg" alt="" width="30px" height="30px">
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="/app/images/featured3.png" alt="" class="products__img">
+                    <h3 class="products__title">Some Drone</h3>
+                    <span class="products__price">1500 €</span>
+                    <button class="products__button">
+                        <img src="/app/images/shopping-cart.svg" alt="" width="30px" height="30px">
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="/app/images/featured2.jpg" alt="" class="products__img">
+                    <h3 class="products__title">Some Drone</h3>
+                    <span class="products__price">1500 €</span>
+                    <button class="products__button">
+                        <img src="/app/images/shopping-cart.svg" alt="" width="30px" height="30px">
+                    </button>
+                </article>
+                <article class="products__card">
+                    <img src="/app/images/featured1.jpg" alt="" class="products__img">
+                    <h3 class="products__title">Some Drone</h3>
+                    <span class="products__price">1500 €</span>
+                    <button class="products__button">
+                        <img src="/app/images/shopping-cart.svg" alt="" width="30px" height="30px">
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+
+        <section class="testimonial section container">
+            <div class="testimonial__container">
+                <div class="testimonial__slider">
+                    <div class="slider__wrapper">
+                        <div class="testimonial__slide active">
+                            <div class="testimonial__quote">
+                                <img src="/app/images/double-quotes.svg" alt="" width="30px" height="30px">
+                            </div>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt 
+                                vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit 
+                                eaque corrupti perferendis totam unde!
+                            </p>
+                            <h3 class="testimonial__date">July 05. 2022</h3>
+                            <div class="testimonial__profile">
+                                <img src="app/images/geek.jpg" alt="" class="testimonial__profile-img">
+                                <div class="testimonial__profile-data">
+                                    <span class="testimonial__profile-name">John Doe</span>
+                                    <span class="testimonial__profile-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__slide">
+                            <div class="testimonial__quote">
+                                <img src="/app/images/double-quotes.svg" alt="" width="30px" height="30px">
+                            </div>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt 
+                                vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit 
+                                eaque corrupti perferendis totam unde!
+                            </p>
+                            <h3 class="testimonial__date">July 05. 2022</h3>
+                            <div class="testimonial__profile">
+                                <img src="/app/images/geek2.jpg" alt="" class="testimonial__profile-img">
+                                <div class="testimonial__profile-data">
+                                    <span class="testimonial__profile-name">Jane Doe</span>
+                                    <span class="testimonial__profile-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__slide">
+                            <div class="testimonial__quote">
+                                <img src="/app/images/double-quotes.svg" alt="" width="30px" height="30px">
+                            </div>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt 
+                                vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit 
+                                eaque corrupti perferendis totam unde!
+                            </p>
+                            <h3 class="testimonial__date">July 05. 2022</h3>
+                            <div class="testimonial__profile">
+                                <img src="/app/images/geek3.jpg" class="testimonial__profile-img">
+                                <div class="testimonial__profile-data">
+                                    <span class="testimonial__profile-name">John Doe</span>
+                                    <span class="testimonial__profile-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial__slide">
+                            <div class="testimonial__quote">
+                                <img src="/app/images/double-quotes.svg" alt="" width="30px" height="30px">
+                            </div>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt 
+                                vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit 
+                                eaque corrupti perferendis totam unde!
+                            </p>
+                            <h3 class="testimonial__date">July 05. 2022</h3>
+                            <div class="testimonial__profile">
+                                <img src="/app/images/geek4.jpg" alt="" class="testimonial__profile-img">
+                                <div class="testimonial__profile-data">
+                                    <span class="testimonial__profile-name">Jane Doe</span>
+                                    <span class="testimonial__profile-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider__button-prev">
+                        <img src="/app/images/left-arrow.svg" alt="" width="30px" height="30px">
+                    </button>
+                    <button class="slider__button-next">
+                        <img src="/app/images/right-arrow.svg" alt="" width="30px" height="30px">
+                    </button>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="/app/images/testimonial2.jpg" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW -->
+
+        <section class="new section container" id="new">
+            <h2 class="section__title">New Arrivals</h2>
+            <div class="new__container">
+                <article class="new__card">
+                    <span class="new__tag">New</span>
+                    <img src="/app/images/drone6.png" alt="" class="new__img">
+                    <div class="new__data">
+                        <h3 class="new__title">Some Drone</h3>
+                        <span class="new__price">980 €</span>
+                    </div>
+                    <ul class="new__social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/facebook.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/twitter.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/instagram.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="new__card">
+                    <span class="new__tag">New</span>
+                    <img src="/app/images/drone8.png" alt="" class="new__img">
+                    <div class="new__data">
+                        <h3 class="new__title">Some Drone</h3>
+                        <span class="new__price">980 €</span>
+                    </div>
+                    <ul class="new__social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/facebook.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/twitter.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/instagram.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="new__card">
+                    <span class="new__tag">New</span>
+                    <img src="/app/images/drone9.png" alt="" class="new__img">
+                    <div class="new__data">
+                        <h3 class="new__title">Some Drone</h3>
+                        <span class="new__price">980 €</span>
+                    </div>
+                    <ul class="new__social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/facebook.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/twitter.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/instagram.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="new__card">
+                    <span class="new__tag">New</span>
+                    <img src="/app/images/drone6.png" alt="" class="new__img">
+                    <div class="new__data">
+                        <h3 class="new__title">Some Drone</h3>
+                        <span class="new__price">980 €</span>
+                    </div>
+                    <ul class="new__social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/facebook.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/twitter.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="new__social-link">
+                                <img src="/app/images/instagram.svg" alt="" width="30px" height="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- OUR TEAM -->
+        <!-- https://www.pexels.com/search/people/ -->
+        <section class="team section container">
+            <h2 class="section__title">Our Team</h2>
+            <div class="team__container">
+                <div class="team__card">
+                    <div class="team__card-bcg">
+                        <img src="/app/images/bg-image.jpg" alt="">
+                    </div>
+                    <div class="team__member-pic">
+                        <img src="/app/images/pic1.jpg" alt="">
+                    </div>
+                    <div class="team__memeber-info">
+                        <h4 class="team__member-name">Some Name</h4>
+                        <span>technician</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Debitis, corrupti animi. 
+                        </p>
+                        <ul class="team__social">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="/app/images/facebook-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="/app/images/twitter-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="/app/images/instagram-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="/app/images/github-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team__card">
+                    <div class="team__card-bcg">
+                        <img src="/app/images/bg-image.jpg" alt="">
+                    </div>
+                    <div class="team__member-pic">
+                        <img src="/app/images/pic2.jpg" alt="">
+                    </div>
+                    <div class="team__memeber-info">
+                        <h4 class="team__member-name">Some Name</h4>
+                        <span>technician</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Debitis, corrupti animi.
+                        </p>
+                        <ul class="team__social">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="/app/images/facebook-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="/app/images/twitter-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="/app/images/instagram-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="/app/images/github-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team__card">
+                    <div class="team__card-bcg">
+                        <img src="/app/images/bg-image.jpg" alt="">
+                    </div>
+                    <div class="team__member-pic">
+                        <img src="/app/images/pic3.jpg" alt="">
+                    </div>
+                    <div class="team__memeber-info">
+                        <h4 class="team__member-name">Some Name</h4>
+                        <span>technician</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Debitis, corrupti animi.
+                        </p>
+                        <ul class="team__social">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="/app/images/facebook-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="/app/images/twitter-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="/app/images/instagram-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="/app/images/github-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team__card">
+                    <div class="team__card-bcg">
+                        <img src="/app/images/bg-image.jpg" alt="">
+                    </div>
+                    <div class="team__member-pic">
+                        <img src="/app/images/pic4.jpg" alt="">
+                    </div>
+                    <div class="team__memeber-info">
+                        <h4 class="team__member-name">Some Name</h4>
+                        <span>technician</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Debitis, corrupti animi.
+                        </p>
+                        <ul class="team__social">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="/app/images/facebook-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="/app/images/twitter-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="/app/images/instagram-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="/app/images/github-icon.svg" alt="" width="25px" height="25px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+
+        <section class="newsletter section container">
+            <h2 class="section__title">Subscribe</h2>
+            <div class="newsletter__bg">
+                <div>
+                    <h2 class="newsletter__title">Subscribe To<br>Our Newsletter</h2>
+                    <p class="newsletter__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Placeat animi voluptatem assumenda cumque error odit accusamus, 
+                        dolorum, sit porro tempora est repellendus quaerat aliquid nobis dolore.
+                    </p>
+                </div>
+                <form action="" class="newsletter__subscribe">
+                    <img src="/app/images/mail-box.svg" alt="" width="80px" height="80px">
+                    <div>
+                        <input type="email" placeholder="enter email..." class="newsletter__input">
+                        <button class="button">subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer section">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+                <ul class="footer__list">
+                    <li>1234 Europe</li>
+                    <li>La Libertad 43210</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About us</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Support Center</a></li>
+                    <li><a href="#" class="footer__link">Customer Support</a></li>
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                    <li><a href="#" class="footer__link">Copy Right</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Products</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Outdoor Drones</a></li>
+                    <li><a href="#" class="footer__link">Indoor Drones</a></li>
+                    <li><a href="#" class="footer__link">Electrics</a></li>
+                    <li><a href="#" class="footer__link">Accesories</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <ul class="footer__social">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <img src="/app/images/facebook.svg" alt="" width="20px" height="20px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <img src="/app/images/twitter.svg" alt="" width="20px" height="20px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <img src="/app/images/instagram.svg" alt="" width="20px" height="20px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&copy; Copyright 2020 DodaDesign</span>
+    </footer>
+</body>
+</html>

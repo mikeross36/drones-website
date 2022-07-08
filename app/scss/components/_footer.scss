@@ -1,0 +1,59 @@
+@use "../mixins";
+@use "../variables" as *;
+
+.footer {
+    &__container {
+       display: grid;
+       row-gap: 2rem;
+       border-bottom: 1px solid $titleClr;
+       padding-bottom: 3rem;
+
+       @include mixins.breakpoint-up(small){
+           grid-template-columns: repeat(2, 1fr);
+       }
+
+       @include mixins.breakpoint-up(medium) {
+           grid-template-columns: repeat(4, max-content);
+           justify-content: space-between;
+       }
+
+       .footer__title {
+           font-size: $fontSlg;
+           margin-bottom: $mb-1-5; 
+           color: $textClrLight;
+
+           @include mixins.breakpoint-up(medium) {
+               font-size: $fontMd;
+           }
+       }
+
+       .footer__list,
+       .footer__links {
+           display: flex;
+           flex-direction: column;
+           row-gap: .75rem;
+           color: $textClrLight;
+
+           .footer__link {
+               color: $textClrLight;
+
+               &:hover{
+                   color: $firstClr;
+               }
+           }
+        }
+
+       .footer__social {
+           display: flex;
+           column-gap: 2rem;
+        }
+    }
+
+   .footer__copy {
+       display: block;
+       margin: 1rem 0 1rem 0;
+       text-align: center;
+       font-size: .75rem;
+       color: $textClrLight;
+    }
+}
