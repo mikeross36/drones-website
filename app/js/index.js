@@ -1,3 +1,12 @@
+function toggleSearch() {
+    const searchBtn = document.querySelector(".nav__search")
+    const navSearchForm = document.querySelector(".nav__search-form")
+    if (searchBtn) {
+        searchBtn.addEventListener("click", () => {
+            navSearchForm.classList.toggle("active-form")
+        })
+    }
+}
 
 function toggleCart() {
     const cart = document.getElementById("cart")
@@ -37,6 +46,7 @@ window.onscroll = function() {
 
 (function () {
     toggleMobMenu()
+    toggleSearch()
     toggleCart()
     sliderAction()
 })();

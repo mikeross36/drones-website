@@ -3,10 +3,12 @@ function toggleMobMenu() {
     const navToggle = document.getElementById("nav-toggle");
     const navClose = document.getElementById("nav-close");
     const navLink = document.querySelectorAll(".nav__link");
+    const navSearchForm = document.querySelector(".nav__search-form")
 
     if (navToggle) {
         navToggle.addEventListener("click", () => {
             navMenu.classList.add("show-menu");
+            closeSearchForm()
         });
     }
 
@@ -24,14 +26,9 @@ function toggleMobMenu() {
         });
     }
 
-    if (navLink) {
-        navLink.forEach(link => {
-            link.addEventListener("click", () => {
-                navLink.forEach(l => {
-                    l.classList.remove("active-link");
-                    this.classList.add("active-link");
-                });
-            });
-        });
+    function closeSearchForm() {
+        if (navSearchForm.classList.contains("active-form")) {
+            return navSearchForm.classList.remove("active-form")
+        }
     }
 }
