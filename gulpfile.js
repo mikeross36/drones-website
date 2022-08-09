@@ -7,6 +7,8 @@ const terser = require("gulp-terser")
 const concat = require("gulp-concat")
 const imagemin = require("gulp-imagemin")
 const embedsvg = require("gulp-embed-svg")
+const mode = require("gulp-mode")();
+const sourcemaps = require("gulp-sourcemaps")
 
 const files = {
     scssPath: "app/scss/**/*.scss",
@@ -14,19 +16,28 @@ const files = {
     imgPath: "app/images/**/*"
 }
 
+function copyHtml() {
+    return src("*.html")
+    .pipe(dest("dist"))
+}
+
 function scssTask() {
-    return src(files.scssPath)
+  return src(files.scssPath)
+    .pipe(mode.development(sourcemaps.init()))
     .pipe(sass())
     .pipe(autoprefixer("last 2 versions"))
     .pipe(cleancss())
-    .pipe(dest("dist/css"))
+    .pipe(mode.development(sourcemaps.write()))
+    .pipe(dest("dist/css"));
 }
 
 function jsTask() {
-    return src(files.jsPath)
+  return src(files.jsPath)
+    .pipe(mode.development(sourcemaps.init()))
     .pipe(concat("all.js"))
     .pipe(terser())
-    .pipe(dest("dist/js"))
+    .pipe(mode.development(sourcemaps.write()))
+    .pipe(dest("dist/js"));
 }
 
 function imageminTask() {
@@ -42,14 +53,24 @@ function embedSvgTask() {
 }
 
 function watchTask() {
+    watch("*.html", copyHtml)
     watch([files.scssPath, files.jsPath], parallel(scssTask, jsTask))
     watch(files.imgPath, imageminTask)
     watch("*/.html", embedSvgTask)
 }
 
 exports.default = series(
+    copyHtml,
     parallel(scssTask, jsTask),
     imageminTask,
     embedSvgTask,
     watchTask
+)
+
+
+exports.build = series(
+    copyHtml,
+    parallel(scssTask, jsTask),
+    imageminTask,
+    embedSvgTask
 )

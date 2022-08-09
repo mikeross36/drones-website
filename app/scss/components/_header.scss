@@ -120,7 +120,7 @@
     
         .nav__search-form {
             position: absolute;
-            top: 125%;
+            top: 40%;
             right: 5%;
             width: 90%;
             height: 1rem;
@@ -137,6 +137,17 @@
 
             &.active-form {
                 transform: scaleY(1);
+            }
+
+            & label {
+                position: absolute;
+                top: -5%;
+                right: 4%;
+                cursor: pointer;
+
+                .close__search {
+                    background: #fff;
+                }
             }
     
             .nav__search-input {

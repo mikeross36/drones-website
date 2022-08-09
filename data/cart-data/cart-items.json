@@ -1,0 +1,20 @@
+[
+    {
+        "id": "d840e72c-fe31-4104-bd50-b2c774672c89",
+        "image":"./app/images/drone6.png",
+        "title":"some drone",
+        "price": 1050
+    },
+    {
+        "id": "7b38eb24-31a7-41d6-97b9-a098defce486",
+        "image":"./app/images/drone8.png",
+        "title":"some drone",
+        "price": 1050
+    },
+    {
+        "id": "f7fecd5a-ca74-4d0a-8038-1afa620b9adb",
+        "image":"./app/images/drone9.png",
+        "title":"some drone",
+        "price": 1050
+    }
+]

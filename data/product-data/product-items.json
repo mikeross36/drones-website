@@ -1,0 +1,38 @@
+[
+    {
+        "id": "25cb54cd-ef09-4698-9c4c-73d15d085f5e",
+        "image": "./app/images/featured6.jpg",
+        "title": "some drone",
+        "price": 1500
+    },
+    {
+        "id": "25cb54cd-ef09-4698-9c4c-73d15d085f5e",
+        "image": "./app/images/featured5.png",
+        "title": "some drone",
+        "price": 1500
+    },
+    {
+        "id": "25cb54cd-ef09-4698-9c4c-73d15d085f5e",
+        "image": "./app/images/featured4.png",
+        "title": "some drone",
+        "price": 1500
+    },
+    {
+        "id": "25cb54cd-ef09-4698-9c4c-73d15d085f5e",
+        "image": "./app/images/featured3.png",
+        "title": "some drone",
+        "price": 1500
+    },
+    {
+        "id": "25cb54cd-ef09-4698-9c4c-73d15d085f5e",
+        "image": "./app/images/featured2.jpg",
+        "title": "some drone",
+        "price": 1500
+    },
+    {
+        "id": "25cb54cd-ef09-4698-9c4c-73d15d085f5e",
+        "image": "./app/images/featured1.jpg",
+        "title": "some drone",
+        "price": 1500
+    }
+]

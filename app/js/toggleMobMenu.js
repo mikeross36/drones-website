@@ -5,20 +5,16 @@ function toggleMobMenu() {
     const navLink = document.querySelectorAll(".nav__link");
     const navSearchForm = document.querySelector(".nav__search-form")
 
-    if (navToggle) {
+    if (navMenu) {
         navToggle.addEventListener("click", () => {
             navMenu.classList.add("show-menu");
             closeSearchForm()
         });
-    }
 
-    if (navClose) {
         navClose.addEventListener("click", () => {
             navMenu.classList.remove("show-menu");
         });
-    }
 
-    if (navLink) {
         navLink.forEach(link => {
             link.addEventListener("click", () => {
                 navMenu.classList.remove("show-menu");
