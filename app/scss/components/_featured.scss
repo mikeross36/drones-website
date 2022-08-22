@@ -3,18 +3,13 @@
 
 .featured {
     margin-bottom: 2rem;
-    // overflow-y: hidden;
+    overflow: hidden;
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
         row-gap: 2.5rem;
-
-        @include mixins.breakpoint-up(small){
-            justify-content: center;
-            align-items: flex-start;
-            gap: 1.5rem;
-        }
+        justify-content: center; 
 
         @include mixins.breakpoint-up(large){
             padding-top: 2rem;
@@ -22,28 +17,23 @@
 
         .featured__card {
             position: relative;
-            width: 20rem;
-            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            width: 18rem;
+            margin: 0 auto;
             background-color: #fff;
-            padding-top: 2rem;
-            border: 1px solid $borderCrl;
-            overflow-y: hidden;
+            padding: 2rem 0;
             transition: .3s;
-            box-shadow: 0px 5px 10px 0px rgba(255,255,255,0.7);
 
             &:hover {
-                box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
-                padding: 2rem 0 3rem 0;
+                box-shadow: 0px 5px 10px 0px rgba(255,255,255,0.7);
             }
 
             &:hover .featured__button {
-                transform: translateY(0);
                 opacity: 1;
-            }
-
-            &:hover .fetured__price {
-                margin-bottom: $mb-1-5;
             }
 
             .featured__tag {
@@ -62,6 +52,7 @@
             .featured__img {
                 height: 214px;
                 margin-bottom: 1rem;
+                overflow: hidden;
             }
 
             .featured__title,
@@ -83,7 +74,6 @@
 
             .featured__button {
                 font-size: $fontSm;
-                transform: translateY(1rem);
                 opacity: 0;
             }
         }

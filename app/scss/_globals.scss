@@ -22,6 +22,7 @@ body {
 }
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 ul{
@@ -60,7 +61,7 @@ button{
 
 // REUSABLE CLASSES
 .container{
-    max-width: 1024px;
+    max-width: 64rem;
     margin-left: $mb-1-5;
     margin-right: $mb-1-5;
 
