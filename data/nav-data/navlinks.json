@@ -1,0 +1,22 @@
+[
+    {
+        "id": "5a294004-e7f6-4fd8-9a72-a495a8cc05df",
+        "link": "#home",
+        "text": "home"
+    },
+    {
+        "id": "12dac33b-17f1-4ee2-a9ef-02b8b2566a3c",
+        "link": "#featured",
+        "text": "featured"
+    },
+    {
+        "id": "07d4126e-106b-4e3b-90f6-e0a6589dacf9",
+        "link": "#products",
+        "text": "products"
+    },
+    {
+        "id": "db864ea0-254f-4f25-8bc4-7ac5162cac83",
+        "link": "#new",
+        "text": "new"
+    }
+]

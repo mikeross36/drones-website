@@ -63,7 +63,7 @@
             color: $titleClr;
             font-weight: $weightMd;
             text-transform: uppercase;
-            font-size: 1.5rem;
+            font-size: $fontSlg;
             transition: all .3s ease;
     
             &.active-link {
@@ -71,7 +71,7 @@
             }
     
             @include mixins.breakpoint-up(medium) {
-                text-transform: initial;
+                text-transform: capitalize;
             }
         }
     
@@ -141,7 +141,7 @@
 
             & label {
                 position: absolute;
-                top: -5%;
+                top: -10%;
                 right: 4%;
                 cursor: pointer;
 
