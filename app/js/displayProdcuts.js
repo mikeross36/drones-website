@@ -2,18 +2,14 @@ class Products{
     async getProducts() {
         try {
             const response = await fetch("/data/product-data/product-items.json")
-            const data = await response.json()
-            // console.log(data)
-            const products = data;
+            const products = await response.json()
             return products;
         }
         catch (error) {
             console.log(error)
         }
     }
-};
 
-class Shop {
     displayProducts(products) {
         let result = "";
         products.forEach(product => {
@@ -36,11 +32,8 @@ class Shop {
     }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-    const products = new Products() 
-    const shop = new Shop()
-
-    products.getProducts().then(products => {
-        shop.displayProducts(products)
-    })
-})
+(async () => {
+    const apiProducts = new Products()
+    const products = await apiProducts.getProducts()
+    apiProducts.displayProducts(products)
+})();

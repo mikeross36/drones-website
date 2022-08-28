@@ -1,19 +1,17 @@
-class Items {
+"use strict"
+
+class Cart {
     async getItems() {
         try {
             const response = await fetch("/data/cart-data/cart-items.json")
-            const data = await response.json()
-            // console.log(data)
-            const items = data;
+            const items = await response.json()
             return items;
         }
         catch (error) {
             console.log(error)
         }
     }
-};
 
-class Cart {
     displayCartItems(items) {
         let result = "";
         items.forEach(item => {
@@ -42,18 +40,31 @@ class Cart {
             `
         })
         const container = document.querySelector(".cart__container")
-        if (container) {
-            container.insertAdjacentHTML("beforeend", result)
-        }
-        return items;
+        if (container) container.insertAdjacentHTML("beforeend", result)
     }
-}
 
-document.addEventListener("DOMContentLoaded", () => {
-    const items = new Items();
+    toggleCart() {
+        const cart = document.getElementById("cart")
+        const cartShop = document.getElementById("cart-shop")
+        const cartClose = document.getElementById("cart-close")
+    
+        if (cartShop) {
+            cartShop.addEventListener("click", () => {
+                cart.classList.add("show-cart")
+            })
+        }
+    
+        if (cartClose) {
+            cartClose.addEventListener("click", () => {
+                cart.classList.remove("show-cart")
+            })
+        }
+    }
+};
+
+(async () => {
     const cart = new Cart()
-
-    items.getItems().then(items => {
-        cart.displayCartItems(items)
-    })
-})
+    const items = await cart.getItems()
+    cart.displayCartItems(items)
+    cart.toggleCart()
+})();

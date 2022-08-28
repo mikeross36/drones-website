@@ -1,0 +1,38 @@
+[
+    {
+        "id": "8c5bf08e-f53c-4670-88cc-13269900e1bd",
+        "quote": "./app/images/double-quotes.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit eaque corrupti perferendis totam unde!",
+        "date": "July 05. 2022",
+        "image": "./app/images/geek.jpg",
+        "name": "john doe",
+        "detail": "director of company"
+    },
+    {
+        "id": "690e7b7b-e843-485f-8846-92d9ed03f760",
+        "quote": "./app/images/double-quotes.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit eaque corrupti perferendis totam unde!",
+        "date": "July 05. 2022",
+        "image": "./app/images/geek2.jpg",
+        "name": "jane doe",
+        "detail": "director of company"
+    },
+    {
+        "id": "8c5bf08e-f53c-4670-88cc-13269900e1bd",
+        "quote": "./app/images/double-quotes.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit eaque corrupti perferendis totam unde!",
+        "date": "July 05. 2022",
+        "image": "./app/images/geek3.jpg",
+        "name": "john doe",
+        "detail": "director of company"
+    },
+    {
+        "id": "8c5bf08e-f53c-4670-88cc-13269900e1bd",
+        "quote": "./app/images/double-quotes.svg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et non deserunt vel eos cum earum quaerat nihil odio suscipit. Laudantium nihil autem excepturi fugit eaque corrupti perferendis totam unde!",
+        "date": "July 05. 2022",
+        "image": "./app/images/geek4.jpg",
+        "name": "jane doe",
+        "detail": "director of company"
+    }
+]

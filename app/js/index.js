@@ -1,20 +1,4 @@
-function toggleCart() {
-    const cart = document.getElementById("cart")
-    const cartShop = document.getElementById("cart-shop")
-    const cartClose = document.getElementById("cart-close")
-
-    if (cartShop) {
-        cartShop.addEventListener("click", () => {
-            cart.classList.add("show-cart")
-        })
-    }
-
-    if (cartClose) {
-        cartClose.addEventListener("click", () => {
-            cart.classList.remove("show-cart")
-        })
-    }
-}
+"use strict"
 
 function headerOnScroll() {
     const header = document.getElementById("header");
@@ -29,7 +13,6 @@ function headerOnScroll() {
     }
 };
 
-
 window.onscroll = function() {
     headerOnScroll()
 };
@@ -37,6 +20,5 @@ window.onscroll = function() {
 (function () {
     toggleMobMenu()
     toggleSearch()
-    toggleCart()
     sliderAction()
 })();

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "3d9bca3e-e0d1-4c8f-8d3e-eed4520540a7",
+        "image": "./app/images/featured3.png",
+        "title": "some drone",
+        "price": "1050 €"
+    },
+    {
+        "id": "d9149963-9ce0-415f-82dc-c5f99639499d",
+        "image": "./app/images/featured4.png",
+        "title": "some drone",
+        "price": "1050 €"
+    },
+    {
+        "id": "8c5bf08e-f53c-4670-88cc-13269900e1bd",
+        "image": "./app/images/featured5.png",
+        "title": "some drone",
+        "price": "1050 €"
+    }
+]
