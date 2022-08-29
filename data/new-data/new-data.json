@@ -1,0 +1,50 @@
+[
+    {
+        "id": "eee7afd3-2d6f-4f78-938f-dd27c9b6a802",
+        "image": "./app/images/drone6.png",
+        "title": "some drone",
+        "price": "980 €",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/"
+    },
+    {
+        "id": "4e18c1ec-9760-4c74-bd2d-1a1930f55cc4",
+        "image": "./app/images/drone8.png",
+        "title": "some drone",
+        "price": "980 €",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/"
+    },
+    {
+        "id": "7f8597e7-b875-4029-a051-6ea34108c9c0",
+        "image": "./app/images/drone9.png",
+        "title": "some drone",
+        "price": "980 €",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/"
+    },
+    {
+        "id": "c1e8bce9-ad6b-416a-8757-2c0072f5ec98",
+        "image": "./app/images/drone6.png",
+        "title": "some drone",
+        "price": "980 €",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/"
+    }
+]

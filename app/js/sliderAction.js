@@ -4,25 +4,18 @@ function sliderAction(){
     const prevBtn = document.querySelector(".slider__button-prev")
     let currentSlide = 0;
 
-    const changeSlide = (slide) => {
-    
-        if (slide >= slides.length) {
-            slide = 0;
-        } else if (slide < 0) {
-            slide = slides.length - 1;
-        };
-    
-        slides[currentSlide].classList.toggle("active");
-        slides[slide].classList.toggle("active");
-    
-        currentSlide = slide;
-    };
-    
-    nextBtn.addEventListener("click", () => {
-        changeSlide(currentSlide + 1);
-    });
-    
-    prevBtn.addEventListener("click", () => {
-        changeSlide(currentSlide - 1);
-    });
+    const prevSlide = () => {
+        slides[currentSlide].classList.remove("active")
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active")
+    }
+
+    const nextSlide = () => {
+        slides[currentSlide].classList.remove("active")
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active")
+    }
+
+    prevBtn.addEventListener("click", prevSlide)
+    nextBtn.addEventListener("click", nextSlide)
 };

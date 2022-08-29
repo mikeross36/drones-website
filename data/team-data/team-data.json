@@ -1,0 +1,62 @@
+[
+    {
+        "id": "99795966-828a-4675-93fb-57bdce204ec7",
+        "image": "/app/images/pic1.jpg",
+        "name": "some name",
+        "title": "technician",
+        "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, corrupti animi.",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/",
+        "githubIcon": "./app/images/github-icon.svg",
+        "guthubUrl": "https://github.com/"
+    },
+    {
+        "id": "8c8061aa-4dd1-4af2-ba44-c4b598f87264",
+        "image": "/app/images/pic2.jpg",
+        "name": "some name",
+        "title": "technician",
+        "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, corrupti animi.",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/",
+        "githubIcon": "./app/images/github-icon.svg",
+        "guthubUrl": "https://github.com/"
+    },
+    {
+        "id": "46289223-a7a9-4cb8-a09f-1acf114311b0",
+        "image": "/app/images/pic3.jpg",
+        "name": "some name",
+        "title": "technician",
+        "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, corrupti animi.",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/",
+        "githubIcon": "./app/images/github-icon.svg",
+        "guthubUrl": "https://github.com/"
+    },
+    {
+        "id": "71f2c4f7-c296-4cae-bb07-f56eed623b1e",
+        "image": "/app/images/pic4.jpg",
+        "name": "some name",
+        "title": "technician",
+        "story": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, corrupti animi.",
+        "faceIcon": "./app/images/facebook.svg",
+        "faceUrl": "https://www.facebook.com/",
+        "twitterIcon": "./app/images/twitter.svg",
+        "twitterUrl": "https://twitter.com/",
+        "instaIcon":" ./app/images/instagram.svg",
+        "instaUrl": "https://www.instagram.com/",
+        "githubIcon": "./app/images/github-icon.svg",
+        "guthubUrl": "https://github.com/"
+    }
+]
