@@ -15,7 +15,8 @@ class Drones {
     displayDrones = drones => {
         const container = document.querySelector(".new__container")
         drones.forEach(drone => {
-            container.insertAdjacentHTML("beforeend", `
+            if (container) {
+                container.insertAdjacentHTML("beforeend", `
                 <article class="new__card">
                     <span class="new__tag">New</span>
                     <img src="${drone.image}" alt="new drone" class="new__img">
@@ -41,7 +42,8 @@ class Drones {
                         </li>
                     </ul>
                 </article>`
-            )
+                )
+            }
         })
     }
 };

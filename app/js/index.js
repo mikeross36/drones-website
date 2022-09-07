@@ -20,5 +20,4 @@ window.onscroll = function() {
 (function () {
     toggleMobMenu()
     toggleSearch()
-    sliderAction()
 })();
