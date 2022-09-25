@@ -2,15 +2,14 @@
 
 const globals = () => {
     const containers = [...document.querySelectorAll(".testimonial__slide")]
-    const slides = [...document.querySelectorAll(".testimonial__slide")]
     const nextBtn = document.querySelector(".slider__button-next")
     const prevBtn = document.querySelector(".slider__button-prev")
     let currentSlide = 0;
 
-    return {containers, slides, nextBtn, prevBtn, currentSlide}
+    return {containers, nextBtn, prevBtn, currentSlide}
 }
 
-let {containers, slides, nextBtn, prevBtn, currentSlide} = globals()
+let {containers, nextBtn, prevBtn, currentSlide} = globals()
 
 class Testimonials {
     getSlides = async () => {
@@ -59,17 +58,17 @@ class Testimonials {
     sliderAction(){
         if (prevBtn) {
             prevBtn.onclick = () => {
-                this.removeActive(slides, currentSlide)
-                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-                this.addActive(slides, currentSlide)
+                this.removeActive(containers, currentSlide)
+                currentSlide = (currentSlide - 1 + containers.length) % containers.length;
+                this.addActive(containers, currentSlide)
             }
         }
     
         if (nextBtn) {
             nextBtn.onclick = () => {
-                this.removeActive(slides, currentSlide)
-                currentSlide = (currentSlide + 1) % slides.length;
-                this.addActive(slides, currentSlide)
+                this.removeActive(containers, currentSlide)
+                currentSlide = (currentSlide + 1) % containers.length;
+                this.addActive(containers, currentSlide)
             }
         }
     }
